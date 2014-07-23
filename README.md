@@ -91,6 +91,8 @@ All formats are supported, phone numbers are expected to follow the [http://en.w
 ### Results
 The first error found will be thrown as an `Error` object if `options.throwError` is `true`. Otherwise all results will be appended to the `result.errors` array which also contains the success flag `result.valid`.
 
+If you want to exclude `instance` or `schema` from error you can use `options.includeInstance: false` and `options.includeSchema: false`. Useful when your schema or instance is too big or schema is documented somewhere else.
+
 ### Filter
 Filter away any properties not in schema if `options.filter` is `true` and `options.additionalProperties` is `false`. By default: `false`.
 
