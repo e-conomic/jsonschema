@@ -150,6 +150,10 @@ describe('Formats', function () {
       this.validator.validate("barack+obama@whitehouse.gov", {'type': 'string', 'format': 'email'}).valid.should.be.true;
     });
 
+    it('should validate email addresses with accents', function () {
+      this.validator.validate("le_báreck+óbama@whitehoüsé.gov", {'type': 'string', 'format': 'email'}).valid.should.be.true;
+    });
+
     it('should not validate obama@', function () {
       this.validator.validate("obama@", {'type': 'string', 'format': 'email'}).valid.should.be.false;
     });
