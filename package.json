@@ -3,7 +3,7 @@
   "name": "jsonschema",
   "version": "1.0.0",
   "dependencies": {
-    "email-address": "git+ssh://git@github.com:e-conomic/email-address.git#v1.2.1"
+    "email-address": "1.2.1"
   },
   "main": "./lib",
   "devDependencies": {
